@@ -4,6 +4,15 @@
  * the string should be reduced and filled by '...' for fit the
  * max length.
  */
+
 export default function truncate(str, maxLength) {
-    return str;
-}
+    let arr = str.split('');
+    if (arr.length > maxLength) {
+        let newArr= arr.slice(0, maxLength-3);
+        let newStr = newArr.join('') + '...';
+        return newStr;
+    }
+    else {
+        return str;
+    }
+};
