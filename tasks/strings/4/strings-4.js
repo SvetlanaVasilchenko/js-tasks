@@ -3,7 +3,7 @@
  * The function should cut a word with the most length and
  * return the string without this word.
  */
-export default function taskName(str) {
+module.exports = function cutLongestWord(str) {
     let arr = str.split(' ')
     let bigWordIndex = 0;
 

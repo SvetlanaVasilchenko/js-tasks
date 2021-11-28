@@ -5,7 +5,7 @@
  * max length.
  */
 
-export default function truncate(str, maxLength) {
+module.exports = function truncate(str, maxLength) {
     let arr = str.split('');
     if (arr.length > maxLength) {
         let newArr= arr.slice(0, maxLength-3);

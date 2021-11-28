@@ -1,7 +1,7 @@
 /**
  * Function should take string and return reversed string
  */
-export default function reverse(str) {
+module.exports = function reverse(str){
     let newStr = "";
 
     for (var i = str.length - 1; i >= 0; i--) {
